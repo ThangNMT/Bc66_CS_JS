@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  font-size: 16px;
+}
+
+body {
+  padding-top: 70px;
+  margin-bottom: 0px;
+  background-color: #f7f7f7;
+}
+
+p {
+  margin: 0 0 16px;
+}
+
+h2 {
+  margin: 0;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.btn {
+  border: 0;
+  color: rgba(255, 255, 255, 0.85);
+  background-color: #294d5c;
+  transition: all 0.15s;
+}
+.btn-danger {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+.btn:hover {
+  outline: none;
+  background-color: #5f9db8;
+}
+.btn:focus {
+  outline: 0;
+  box-shadow: none !important;
+  box-shadow: 0 0 0 2px #404b61, inset 0 0 0 2px #ffffff;
+}
+.btn:active {
+  transform: scale(0.95);
+  background-color: #294d5c;
+}
+
+.btn-banner:hover {
+  background-color: #ffffff;
+}
+#btnDelete {
+  background-color: #e7380c;
+}
+
+#btnDelete:hover {
+  background-color: #e96949;
+}
+
+#btnEdit,
+#btnAddPhone,
+#btnUpdate {
+  background-color: #f0b80f;
+}
+
+#btnEdit:hover,
+#btnAddPhone:hover,
+#btnUpdate:hover {
+  background-color: #f1ca55;
+}
+
+main {
+  background-color: #ffffff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.main-color {
+  background: #2c5364;
+}
+
+.gradient-custom {
+  background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8));
+}
+
+header #navbarColor01 a {
+  transition: 0.3s all ease-in-out;
+}
+
+header #navbarColor01 a:hover {
+  transform: scale(1.15);
+}
+.black {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.nav1 {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.nav2 {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.phoneBanner {
+  background-color: rgba(29, 38, 113, 0.7);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  align-items: center;
+}
+
+footer {
+  /* position: absolute; */
+  bottom: 0;
+  width: 100%;
+  /*height: 65rem;*/
+}
+
+@media (max-width: 1199.5px) {
+  /* .card {
+      height: 600px;
+    } */
+}
+@media (max-width: 991.5px) {
+  /* .card {
+      height: 550px;
+    } */
+  .card span {
+    font-size: 1.1rem;
+  }
+  #selectList {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 525.5px) {
+  #content.my-5 {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
+  .col-lg-4,
+  .col-md-6 {
+    padding-left: 0;
+  }
+
+  #selectList {
+    width: 100% !important;
+  }
+}
+
+/* Dracula theme */
+:root {
+  --gradient-dir1: to top;
+  --gradient-dir2: to right;
+  --gradient-dir3: to left;
+  --gradient-dir4: to left;
+  --gradient-dir5: to top left;
+  --gradient-dir6: to left top;
+  --size: 5px;
+  --border-size: 2.5px;
+  --gradient-primary: #fcb564, #ff65f2, #d66efd;
+  --gradient-secondary: linear-gradient(245deg, #fcb564, #ff65f2);
+}
+body
+  > div[class*="Dracula-"]
+  :where(.mtk5, .mtk9, .mtk10, .mtk15, .mtk16, .mtk17, .mtk26) {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+body > div[class*="Dracula-"] :where(.mtk10, .mtk15) {
+  background-image: linear-gradient(to bottom, #fc806c, #ff1bd1);
+}
+body > div[class*="Dracula-"] :where(.mtk5, .mtk26) {
+  background-image: linear-gradient(to right top, #4dd78a, #20e3b2);
+}
+body > div[class*="Dracula-"] :where(.mtk26) {
+  font-style: italic;
+}
+body > div[class*="Dracula-"] :where(.mtk9, .mtk17) {
+  background-image: linear-gradient(to bottom, #00fdff, #2979ff);
+}
+body > div[class*="Dracula-"] :where(.mtk16) {
+  background-image: linear-gradient(to bottom, #9a86fd, #6a5af9);
+}
+body > div[class*="Dracula-"] :where(.mtk3) {
+  color: #92b4d5;
+}
+
+body > div[class*="Dracula-"] :where(.mtk18, .mtk7) {
+  color: #cbdaff;
+}
+
+body > div[class*="Dracula-"] :where(.mtk13) {
+  color: white;
+}
