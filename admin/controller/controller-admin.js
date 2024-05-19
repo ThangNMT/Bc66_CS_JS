@@ -129,7 +129,7 @@ let sortMinPrice = () => {
     })
     .catch((err) => {
       console.log(err);
-      showMessage("sap xep that bai", false);
+      showMessage("Sort Sucess", false);
     });
 };
 let sortMaxPrice = () => {
@@ -143,6 +143,6 @@ let sortMaxPrice = () => {
     })
     .catch((err) => {
       console.log(err);
-      showMessage("sap xep that bai", false);
+      showMessage("Sort Failed", false);
     });
 };
