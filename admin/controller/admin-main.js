@@ -44,16 +44,16 @@ window.createPhone = () => {
         .create(data)
         .then((res) => {
           fetchData();
-          showMessage("Them thanh cong");
+          showMessage("Add Sucess");
         })
         .catch((err) => {
           console.log(err);
-          showMessage("Them that bai", false);
+          showMessage("Add Failed", false);
         });
     })
     .catch((err) => {
       console.log("err: ", err);
-      showMessage("fetch data that bai");
+      showMessage("fetch data Failed");
     });
 };
 
@@ -72,15 +72,15 @@ window.deletePhone = (id) => {
         .delete(id)
         .then((res) => {
           fetchData();
-          showMessage("Xoa thanh cong");
+          showMessage("Delete Sucess");
         })
         .catch((err) => {
-          showMessage("Xoa that bai");
+          showMessage("Delete Failed");
         });
       Swal.fire({
         title: "Deleted!",
-        text: "Your file has been deleted.",
-        icon: "success",
+        text: "Your Product has been deleted.",
+        icon: "Success",
       });
     }
   });
@@ -120,7 +120,7 @@ window.phoneUpdate = () => {
           $("#exampleModal").modal("hide");
         })
         .catch((err) => {
-          showMessage("update that bai", false);
+          showMessage("update Falied", false);
         });
     })
     .catch((err) => {
